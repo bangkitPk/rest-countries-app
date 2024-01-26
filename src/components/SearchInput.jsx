@@ -16,18 +16,17 @@ export default function SearchInput() {
   const handleBlur = () => {
     setIsFocus(false);
   };
-
-  const handleSearch = (e) => {
-    e.preventDefault();
-    setSearchQuery(searchInput);
-  };
-
   const handleChange = (e) => {
     setSearchInput(e.target.value);
   };
 
+  const handleSearch = (e) => {
+    handleChange(e);
+    setSearchQuery(searchInput);
+  };
+
   return (
-    <form action="" onSubmit={handleSearch}>
+    <form action="">
       <div
         className={`w-full md:w-[30rem] ${
           darkMode ? "bg-dark-blue" : "bg-light-bg shadow-lg text-light-text"
@@ -49,7 +48,7 @@ export default function SearchInput() {
           autoComplete="off"
           onFocus={handleFocus}
           onBlur={handleBlur}
-          onChange={handleChange}
+          onChange={handleSearch}
           value={searchInput}
         />
       </div>
