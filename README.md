@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/countries-app-using-tailwind-css-and-react-js-n8fY-nZxSX)
+- Live Site URL: [Live Site](https://countries-app-bangkitpk.netlify.app/)
 
 ## My process
 
